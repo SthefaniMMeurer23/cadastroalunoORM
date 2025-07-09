@@ -1,0 +1,14 @@
+python3 -m venv meu_env
+
+
+#linux
+source meu_env/bin/activate
+
+#windons
+voce estando dentro da pagina c:\Projetos
+executar o comando de ativação do ambiente virtual
+meu_env\Scripts\activate ---- comando ativação
+
+devendo ficar assim o prompt:
+(meu_env) C:\Projetos>
+
