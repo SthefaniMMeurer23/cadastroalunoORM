@@ -17,8 +17,10 @@ from services.student_service import StudentService
 
 def show_menu():
     print("\n=====Sistema de Cadastro de Alunos=====")
+
     print("1. Cadastrar Aluno ")
     print("2. Listar Aluno ")
+    print("4. Deletar Aluno")
     print("5. Sair")
  
     print("=========================================")
@@ -38,6 +40,14 @@ def main():
            email= input("Infome o Email:")
            service.register_student(name, age, email)
            print("Aluno Cadastrado com sucesso!")
+
+        elif opcao == "2":
+            list()
+
+        elif opcao == "4":
+            id = int(input("Informe o id do Aluno que deseja deletar:"))
+            service.remove_student(id)
+            print("Aluno deletado com sucesso!")
 
         elif opcao == "5":
             print("Saindo do sistema")
